@@ -48,7 +48,7 @@ module.exports = {
         `**Please choose a number between** \`1 - 100\``
       );
     let vol = parseInt(args[0]);
-    if (vol < 0 || vol > 100) {
+    if (vol < 0 || vol > 1000) {
       return client.sendTime(
         message.channel,
         "❌ | **Please Choose A Number Between `1-100`**"
